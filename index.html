@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Enter your budget</h2>
+    <input type="number" id="budget" />
+    <button onclick="setBudget()">submit</button>
+
+    <div class="items-list">
+      <div class="item">
+        <h3>Apple</h3>
+        <h4>price: 1</h4>
+        <div>
+          <button onclick="remove('apple')">-</button>
+
+          <span id="appleQuantity">0</span>
+
+          <button onclick="add('apple')">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>Mango</h3>
+        <h4>price: 2</h4>
+        <div>
+          <button onclick="remove('mango')">-</button>
+
+          <span id="mangoQuantity">0</span>
+
+          <button onclick="add('mango')">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3>Banana</h3>
+        <h4>price: 3</h4>
+        <div>
+          <button onclick="remove('banana')">-</button>
+
+          <span id="bananaQuantity">0</span>
+
+          <button onclick="add('banana')">+</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>
+        Bill:
+        <span id="bill">0</span>
+      </h3>
+      <h3>
+        Remaining Budget:
+        <span id="remainingBudget">0</span>
+      </h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
