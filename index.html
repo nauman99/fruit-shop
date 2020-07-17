@@ -7,54 +7,58 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>Enter your budget</h2>
-    <input type="number" id="budget" />
-    <button onclick="setBudget()">submit</button>
-
+    <header>
+      <h2>Enter your budget</h2>
+      <input type="number" id="budget" placeholder="enter budget ..." />
+      <button onclick="setBudget()" class="header__btn">submit</button>
+    </header>
     <div class="items-list">
       <div class="item">
         <h3>Apple</h3>
-        <h4>price: 1</h4>
+        <img src="./images/apple.png" alt="" class="img" />
+        <h4>Price: Rs. 1</h4>
         <div>
-          <button onclick="remove('apple')">-</button>
+          <button onclick="remove('apple')" class="item__btn">-</button>
 
-          <span id="appleQuantity">0</span>
+          <span id="appleQuantity" class="item__quantity">0</span>
 
-          <button onclick="add('apple')">+</button>
+          <button onclick="add('apple')" class="item__btn">+</button>
         </div>
       </div>
 
       <div class="item">
         <h3>Mango</h3>
-        <h4>price: 2</h4>
+        <img src="./images/mango.png" alt="" class="img" />
+        <h4>Price: Rs. 2</h4>
         <div>
-          <button onclick="remove('mango')">-</button>
+          <button onclick="remove('mango')" class="item__btn">-</button>
 
-          <span id="mangoQuantity">0</span>
+          <span id="mangoQuantity" class="item__quantity">0</span>
 
-          <button onclick="add('mango')">+</button>
+          <button onclick="add('mango')" class="item__btn">+</button>
         </div>
       </div>
 
       <div class="item">
         <h3>Banana</h3>
-        <h4>price: 3</h4>
+        <img src="./images/banana.png" alt="" class="img" />
+        <h4>Price: Rs. 3</h4>
         <div>
-          <button onclick="remove('banana')">-</button>
+          <button onclick="remove('banana')" class="item__btn">-</button>
 
-          <span id="bananaQuantity">0</span>
+          <span id="bananaQuantity" class="item__quantity">0</span>
 
-          <button onclick="add('banana')">+</button>
+          <button onclick="add('banana')" class="item__btn">+</button>
         </div>
       </div>
     </div>
     <div>
       <h3>
-        Bill:
+        Bill: Rs.
         <span id="bill">0</span>
       </h3>
       <h3>
-        Remaining Budget:
+        Remaining Budget: Rs.
         <span id="remainingBudget">0</span>
       </h3>
     </div>

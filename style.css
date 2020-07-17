@@ -1,5 +1,26 @@
 body {
   text-align: center;
+  margin: 0;
+  font-family: cursive;
+}
+header {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #03fc8c 1%, #03fcd3 99%);
+}
+#budget {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  width: 100px;
+}
+.header__btn {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  background-color: rgb(34, 211, 18);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
 }
 .items-list {
   display: flex;
@@ -7,5 +28,26 @@ body {
   align-items: center;
 }
 .item {
-  margin: 2rem auto;
+  padding: 1rem 4rem 2rem 4rem;
+  margin: 2rem 4rem;
+  border: 2px solid #03fc8c;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #03fc8c 1%, #03fcd3 99%);
+}
+.img {
+  width: 10rem;
+  height: 10rem;
+}
+.item__btn {
+  margin: 1rem;
+  padding: 0.25rem 0.75rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgb(34, 211, 18);
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+.item__quantity {
+  font-size: 1.2rem;
 }
